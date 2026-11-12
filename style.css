@@ -1,0 +1,182 @@
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100%;
+            padding: 30px 15px;
+        }
+        .registration-container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .form-header h1 {
+            color: #1e3a8a;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .form-header p {
+            color: #666666;
+            font-size: 14px;
+        }
+
+        
+
+        .status-message.success {
+            display: block;
+            background-color: #d1fae5;
+            color: #065f46;
+            border: 1px solid #10b981;
+        }
+
+        .status-message.error {
+            display: block;
+            background-color: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #ef4444;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+        label {
+            color: #333333;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .required-star {
+            color: #dc2626;
+        }
+
+        .input-tags
+        {
+
+            width: 100%;
+            padding: 8px 10px;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+            textarea {
+                resize: vertical;
+                min-height: 70px;
+            }
+        .documen {
+            font-size: 14px;
+            padding: 6px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            background-color: #fafafa;
+            cursor: pointer;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 6px 0;
+        }
+
+        .radio-option,
+        .checkbox-option {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            color: #333333;
+            cursor: pointer;
+        }
+
+        .radio-option input[type="radio"],
+        .checkbox-option input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            accent-color: #2563eb;
+        }
+
+        .checkbox-group {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .error-label {
+            color: #dc2626;
+            font-size: 12px;
+            margin-top: 4px;
+            display: none;
+        }
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-register {
+            background-color: #2563eb;
+            color: #ffffff;
+        }
+
+        .btn-register:hover {
+            background-color: #1d4ed8;
+        }
+
+        .btn-reset {
+            background-color: #6b7280;
+            color: #ffffff;
+        }
+
+        .btn-reset:hover {
+            background-color: #4b5563;
+        }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="registration-container">
+        
+        <div class="form-header">
+            <h1>Student Registration</h1>
+            <p>Please complete the form below to register for the upcoming semester.</p>
+        </div>
+
+        <form id="registrationForm" action="#">
+            
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input class="input-tags" type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fatherName">Father's Name </label>
+                <input class="input-tags" type="text" id="fatherName" name="fatherName" placeholder="Robert Doe" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="regNo">Registration Number</label>
+                    <input class="input-tags" type="text" id="regNo" name="regNo" placeholder="2026-BSSE-001" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input class="input-tags" type="email" id="email" name="email" placeholder="student@university.edu" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input class="input-tags" type="password" id="password" placeholder="******" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input class="input-tags" type="password" id="confirmPassword" placeholder="******" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input class="input-tags" type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input class="input-tags" type="radio" name="gender" value="Male" required> Male
+                        </label>
+                        <label class="radio-option">
+                            <input  class="input-tags"type="radio" name="gender" value="Female"> Female
+                        </label>
+                        <label class="radio-option">
+                            <input  class="input-tags"type="radio" name="gender" value="Other"> Other
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select class="input-tags" id="department" name="department" required>
+                        <option value="" disabled selected>Select Department</option>
+                        <option value="BSSE">BSSE (Software Engineering)</option>
+                        <option value="BSAI">BSAI (Artificial Intelligence)</option>
+                        <option value="BSDS">BSDS (Data Science)</option>
+                        <option value="BSCS">BSCS (Computer Science)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="semester">Semester</label>
+                    <select class="input-tags" id="semester" name="semester" required>
+                        <option value="" disabled selected>Select Semester</option>
+                        <option value="1st">1st Semester</option>
+                        <option value="2nd">2nd Semester</option>
+                        <option value="3rd">3rd Semester</option>
+                        <option value="4th">4th Semester</option>
+                        <option value="5th">5th Semester</option>
+                        <option value="6th">6th Semester</option>
+                        <option value="7th">7th Semester</option>
+                        <option value="8th">8th Semester</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input class="input-tags" type="tel" id="phone" placeholder="0300-xxxxxxx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Permanent Address</label>
+                <textarea class="input-tags" id="address" name="address" placeholder="Enter your full street address, city, and postal code" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="profilePic">Upload Document</label>
+                <input class="document" type="file" id="profilePic" required>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label class="checkbox-option">
+                    <input class="input-tags" type="checkbox" id="terms" name="terms" required>
+                    I agree to the <a href="#" style="color: #2563eb; text-decoration: underline;">Terms and Conditions</a>
+                </label>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-register">Register</button>
+                <button type="reset" class="btn btn-reset" id="resetBtn">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
